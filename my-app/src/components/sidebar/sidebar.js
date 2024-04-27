@@ -9,14 +9,14 @@ const [open, setOpen] = useState(false);
 
   const variants = {
     open:{
-      clipPath:"circle(1200px at 75% 50px)",
+      clipPath:"circle(1200px at 75% 5.5%)",
       transition:{
         type:"spring",
         stiffness:20,
       },
     },
     closed:{
-      clipPath: "circle(30px at 75% 50px)",
+      clipPath: "circle(30px at 75% 5.5%)",
       transition:{
         delay:0.5,
         type:"spring",

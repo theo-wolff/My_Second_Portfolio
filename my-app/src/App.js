@@ -4,12 +4,12 @@ import Navbar from './components/navbar/Navbar.js';
 function App() {
   return (
     <div >
-      <section>
+      <section id="home">
         <Navbar></Navbar>
       </section>
-      <section>About me</section>
-      <section>My work</section>
-      <section>Hobbies</section>
+      <section id="about-me">About me</section>
+      <section id="my-work">My work</section>
+      <section id="hobbies"> Hobbies</section>
     </div>
   );
 }
