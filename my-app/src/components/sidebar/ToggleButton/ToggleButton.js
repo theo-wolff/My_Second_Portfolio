@@ -9,9 +9,9 @@ const ToggleButton = ({setOpen}) => {
     <motion.div 
       initial={{opacity:0, scale:0}}
       animate={{opacity:1, scale:1}}
-      transition={{duration:0.5,
-                  delay:0.5}}
-      className='ham'>
+      transition={{duration:0.5}}
+      whileHover={{scale:1.2, opacity:0.9}}
+      className='ham' >
     <Hamburger rounded className="ham" onToggle={toggled => {
         setOpen((prev)=>!prev)
       }}></Hamburger>

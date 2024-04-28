@@ -4,4 +4,5 @@
     top: 25px;
     right: 63px;
     cursor: pointer;
+    z-index: 10;
 }
