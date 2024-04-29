@@ -1,5 +1,5 @@
 html, body{
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
   scroll-snap-type: y mandatory;
 }
 
@@ -35,11 +35,17 @@ a{
 }
 section{
   height: 100vh;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
 }
 
 @media (max-width:830px) {
   section{
     height:fit-content;
+    scroll-snap-align:none;
+  }
+
+  html, body{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
   }
 }

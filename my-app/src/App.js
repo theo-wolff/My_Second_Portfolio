@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar.js';
 import Home from './components/Home/Home.js';
 import About from './components/About/About.js'
 import Skills from './components/Skills/Skills.js';
+import Experiences from './components/Experiences/Experiences.js';
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
       </section>
       <section id="skills">
         <Skills></Skills>
+      </section>
+      <section id="experiences">
+        <Experiences></Experiences>
       </section>
     </div>
   );
