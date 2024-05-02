@@ -1,5 +1,5 @@
 .skills{
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     background: linear-gradient(180deg in oklab,  var(--clr-dark), var(--clr-accent));
 }

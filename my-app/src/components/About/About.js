@@ -11,8 +11,8 @@ const About = () => {
   return (
     <>
     <div className='about'>
-        <h2 className='title-about'>About me</h2>
-        <div className='about-bar'></div>
+      <h2 className='title-about'>About me</h2>
+      <div className='about-bar'></div>
       <div className='container'>
         <img className='img-bitmoji' src={bitmoji}></img>
         <ul className='about-items'>

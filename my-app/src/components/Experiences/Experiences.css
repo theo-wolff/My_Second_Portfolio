@@ -2,6 +2,7 @@
     height: auto;
     overflow: hidden;
     background: linear-gradient(180deg in oklab, var(--clr-accent),  var(--clr-dark));
+    padding: 10rem;
 }
 
 .experiences{
@@ -10,6 +11,7 @@
     justify-content: space-around;
     align-items: center;
     height: auto;
+    gap:2rem;
 }
 
 .experiences-title{
@@ -23,7 +25,7 @@
     height: 10px;
     width:80%;
     background-color: var(--clr-light);
-    margin: 1% auto 4%;
+    margin: 1% auto 7%;
     border-radius: 10px;
 }
 
@@ -31,25 +33,73 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+ 
 }
 
 .experiences-items{
     display: flex;
     flex-direction: row;    
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items:center;
+    height: auto;
+    width: 100%;
 }
 
 
+
+
 .experiences-item{
-    width: 300px;
-    height: 100px;
+    height: auto;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--clr-dark);
+    border-radius: 1rem;
+    box-shadow: 0px 10px 30px var(--clr-dark) 0.5;
+    word-wrap: break-word;
+    padding:1rem;
+    cursor: pointer;
 }
+.experiences-item-title{
+    margin: 50px auto 0%;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.experiences-item-title-bar{
+    height: 10px;
+    width:80%;
+    background-color: var(--clr-light);
+    margin: 1rem auto 1rem;
+    border-radius: 10px;
+}
+.experiences-item-text{
+    padding: 2rem;;
+}
+
+.experiences-expand{
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    height: 70%;
+    width: 70%;
+    background-color: var(--clr-dark);
+    z-index: 5;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    border-radius: 10px;
+}
+
+.experiences-expand::-webkit-scrollbar {
+    display: none;
+  }
+/* 
+.experiences-expand p{
+    line-height: 150%;
+} */
 
 .experiences-item-title{
     background-color: var(--clr-dark);
@@ -68,17 +118,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    height: auto;
+    width: 5rem;
 }
 
 
 .experiences-bar-head{
     height: 20px;
     width: 20px;
-    background-color: var(--clr-light);
-    border: 1px solid var(--clr-dark);
+    background-color: var(--clr-accent);
+    outline: 10px inset var(--clr-light);
     border-radius: 100%;
-    border: 2px solid var(--clr-dark);
+    z-index: 0;
+    
 }
 
 .experiences-bar-body{
@@ -86,5 +138,28 @@
     width: 10px;
     background-color: var(--clr-light);
     margin: auto 10px;
-    border: 2px solid var(--clr-dark);
+}
+
+.experiences-empty{
+    width: 15rem;
+}
+
+
+@media (max-width:830px) {
+    .experiences{
+        flex-direction: column;
+    }
+
+    .experiences-empty{
+        width: 10rem;
+    }
+
+    .experiences-item{
+        width: 10rem;
+    }
+
+    .experiences-bar{
+        width: 2rem;
+    }
+
 }

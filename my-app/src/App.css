@@ -1,6 +1,10 @@
 html, body{
   scroll-behavior:smooth;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
+  max-width: 100%;
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 *{
@@ -33,10 +37,7 @@ a{
   text-decoration: none;
   color:inherit; /*take color from parent (body)*/
 }
-section{
-  height: 100vh;
-  /* scroll-snap-align: center; */
-}
+
 
 @media (max-width:830px) {
   section{

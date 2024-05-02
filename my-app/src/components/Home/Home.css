@@ -13,37 +13,7 @@
     box-shadow: var(--bs);
 }
 
-@media (min-width: 600px) {
-    .intro {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
-    
-    .intro__img {
-        grid-area: img;
-        min-width: 250px;
-        position: relative;
-        z-index: 2;
-        border-radius: 10px;
-    }    
-    
-    .section__subtitle--intro {
-        align-self: start;
-        grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: right;
-        position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
-        border-radius: 10px;
-    }
-}
+
 
 
 .section__title {
@@ -99,12 +69,7 @@
 }
 
 .slidingText{
-    position: absolute;
-    font-size: 50vh;
-    color: #06f7f709;
-    bottom: -120px;
-    white-space: nowrap;
-    width: 50%;
+    display: none;
 }
 
 
@@ -201,5 +166,50 @@
     width: 220px;
     height: 220px;
     opacity: 1;
+  }
+
+
+  @media (min-width: 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    
+    .intro__img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+        border-radius: 10px;
+    }    
+    
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+        border-radius: 10px;
+    }
+}
+
+  @media (min-width:1080px){
+    .slidingText{
+      display: inline;
+      position: absolute;
+      font-size: 50vh;
+      color: #06f7f709;
+      bottom: -120px;
+      white-space: nowrap;
+      width: 50%;
+  }
   }
   
