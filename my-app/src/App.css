@@ -14,19 +14,37 @@ html, body{
   font-family: var(--ff-primary);
 }
 
+body{
+  font-family: var(--ff-primary);
+  font-size: var(--fs-normal);
+}
+
 :root{
-  --ff-primary: "Inconsolata", sans-serif;
+  --ff-primary: "Poppins", sans-serif;
   --ff-secondary: "Inconsolata", monospace;
 
-  --clr-light: #D9D9D9;
+  --fw-normal: 400;
+  --fw-medium:500;
+  --fw-bold:600;
+
+  --fs-normal: normal;
+  --fs-title: 35px;
+  /* --clr-light: #D9D9D9;
   --clr-dark: #284B63;
-  --clr-accent: #3C6E71;
+  --clr-accent: #3C6E71; */
+
+  --clr-light:   #fffdf6;
+  --clr-dark:  #494949;
+  --clr-accent: #B4B4B8;
+  --clr-accent-light: #fffdf6; 
+
+  --box-shadow: rgba(49,49,49, 0.3) 0px 19px 38px, rgba(49,49,49, 0.22) 0px 15px 12px;
 
 }
 
 html,body{
-  background-color: var(--clr-dark);
-  color:var(--clr-light);
+  background-color: var(--clr-light);
+  color:var(--clr-dark);
 }
 
 body::-webkit-scrollbar {
@@ -36,6 +54,10 @@ body::-webkit-scrollbar {
 a{
   text-decoration: none;
   color:inherit; /*take color from parent (body)*/
+}
+
+section{
+  margin-bottom: 3rem;
 }
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import CV from "../../img/CV_photo.jpg"
-import Scroll from "../../img/scroll-down.svg"
+import Scroll from "../../img/scroll-down.png"
 import { motion } from 'framer-motion'
 
 
@@ -43,7 +43,7 @@ const Home = () => {
           </motion.a>
         </div>
       </div>
-      <motion.div initial={{x:0}}
+      <motion.div initial={{x:0, opacity:0.2}}
                   animate = {{x: "-340%"}}
                   transition={{repeat: Infinity, duration: 7, repeatType:"mirror"}}
                   className='text-container slidingText'>

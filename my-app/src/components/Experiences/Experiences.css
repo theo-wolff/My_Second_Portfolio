@@ -1,32 +1,60 @@
 .experiences-global-container{
     height: auto;
     overflow: hidden;
-    background: linear-gradient(180deg in oklab, var(--clr-accent),  var(--clr-dark));
-    padding: 10rem;
+    /* background: linear-gradient(180deg in oklab, var(--clr-accent),  var(--clr-dark)); */
 }
 
 .experiences{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: auto;
-    gap:2rem;
 }
 
 .experiences-title{
-    margin: 100px auto 0%;
-    font-size: 35px;
-    font-weight: bold;
+    margin: 1rem auto 0;
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
     text-align: center;
+    color: var(--clr-dark);
 }
 
 .experiences-title-bar{
     height: 10px;
     width:80%;
-    background-color: var(--clr-light);
-    margin: 1% auto 7%;
+    background-color: var(--clr-dark);
+    margin: 1rem auto 3rem;
     border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.experiences-title-category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:2rem;
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.experiences-title-category-item{
+    opacity: 1;
+    transition: 0.1s;
+}
+
+.experiences-title-category-item:hover{
+    opacity: 0.5;
+}
+
+
+.experiences-title-img{
+    width: 2rem;
+    height: 2rem;
 }
 
 .experiences-container{
@@ -43,9 +71,9 @@
     align-items:center;
     height: auto;
     width: 100%;
+    color: var(--clr-accent-light);
+    
 }
-
-
 
 
 .experiences-item{
@@ -57,16 +85,24 @@
     align-items: center;
     background-color: var(--clr-dark);
     border-radius: 1rem;
-    box-shadow: 0px 10px 30px var(--clr-dark) 0.5;
+    box-shadow: var(--box-shadow);
     word-wrap: break-word;
     padding:1rem;
     cursor: pointer;
+    opacity: 1;
+    transition: 0.1s;
 }
+
+.experiences-item:hover{
+    opacity:0.5;
+}
+
 .experiences-item-title{
     margin: 50px auto 0%;
-    font-size: 35px;
-    font-weight: bold;
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
     text-align: center;
+    color: var(--clr-light);
 }
 .experiences-item-title-bar{
     height: 10px;
@@ -91,6 +127,10 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     border-radius: 10px;
+}
+
+.experiences-expand:hover{
+    opacity: 1;
 }
 
 .experiences-expand::-webkit-scrollbar {
@@ -124,20 +164,23 @@
 
 
 .experiences-bar-head{
-    height: 20px;
-    width: 20px;
-    background-color: var(--clr-accent);
-    outline: 10px inset var(--clr-light);
+    height: 10px;
+    width: 10px;
+    background-color: var(--clr-dark);
+    outline: 8px inset var(--clr-light);
     border-radius: 100%;
     z-index: 0;
+    box-shadow: var(--box-shadow);
     
 }
 
 .experiences-bar-body{
     height: 300px;
-    width: 10px;
-    background-color: var(--clr-light);
+    width: 4px;
+    background-color: var(--clr-dark);
     margin: auto 10px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
 }
 
 .experiences-empty{
@@ -146,10 +189,9 @@
 
 
 @media (max-width:830px) {
-    .experiences{
-        flex-direction: column;
+    .experiences-title-category{
+        font-size: var(--fs-normal);
     }
-
     .experiences-empty{
         width: 10rem;
     }

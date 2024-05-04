@@ -1,50 +1,65 @@
 import { motion, useScroll } from "framer-motion";
 import "./Experiences.css";
+import Exp from "../../img/portfolio.png"
+import Educ from "../../img/graduation-cap.png"
 
 
 import React, { useState } from 'react';
 
 const Experiences = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState('');
+    const [isClosed, setIsClosed]=useState(false);
+    const [isClicked, setIsClicked] = useState(false);
+
+    const onHandleClick=(val)=>{
+        if(!isClosed){
+            setIsOpen(val);
+            setIsClosed(true);
+        }
+        else{
+            setIsOpen('');
+            setIsClosed(false);
+        }
+    }
 
     return (
         <>
         <div className="experiences-global-container">
             <div className='experiences'>
-                <div className='experiences-container'>
-                    <h2 className='experiences-title'>Professional experiences</h2>
-                    <div className='experiences-title-bar'></div>
+                <div className="experiences-title">Qualification</div>
+                <div className="experiences-title-bar"></div>
+                <div className="experiences-title-category">
+                    <div className="experiences-title-category-item" onClick={()=>setIsClicked(false)}><img class="experiences-title-img" src={Educ}></img> Education</div>
+                    <div className="experiences-title-category-item" onClick={()=>setIsClicked(true)}><img class="experiences-title-img" src={Exp}></img> Experience</div>
+                </div>
+                {!isClicked && <div className='experiences-container'>
                     <div className='experiences-items'>
-                        <motion.div transition = {{duration:1, type:"spring"}} 
+                        <motion.div transition = {{duration:0.5, type:"spring"}} 
                                     layout="position" 
-                                    onClick={()=> setIsOpen(!isOpen)} 
+                                    onClick={()=>onHandleClick('1.1')} 
                                     className='experiences-item'
                                     >
                             <motion.h4 layout>ASML: Software Intern</motion.h4>
-                            {isOpen && (
-                            <motion.div className="experiences-expand" 
-                                        initial={{opacity:0}}
-                                        animate={{opacity:1}}
-                                        transition={{duration:1}}
-                                        >
-                                <h2 className='experiences-item-title'>ASML Software Intern</h2>
-                                <div className='experiences-item-title-bar'></div>
-                                <div className="experiences-item-text">
-                                    4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-                                    4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-                                    4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-                                    4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-                                    4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-                                    4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-                                    4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-                                    4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-                                    4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-
-                                </div>
-                            </motion.div>)}
-
                         </motion.div>
+
+                        {/* A CHANGER DANS NVT COMPOSANT */}
+                        {isOpen=='1.1' && (
+                        <motion.div className="experiences-expand" 
+                                    initial={{opacity:0}}
+                                    animate={{opacity:1}}
+                                    transition={{duration:0.5}}
+                                    onClick={()=>onHandleClick('1.1')}
+                                    >
+                            <h2 className='experiences-item-title'>ASML Software Intern</h2>
+                            <div className='experiences-item-title-bar'></div>
+                            <div className="experiences-item-text">
+                                44444444444444444444444444444444444444444444444444444444444444
+
+                            </div>
+                        </motion.div>)}
+
+                        
                         <div className='experiences-bar'>
                             <div className="experiences-bar-head"></div>
                             <div className="experiences-bar-body"></div>
@@ -59,11 +74,11 @@ const Experiences = () => {
                         </div>
                         <motion.div transition = {{duration:1, type:"spring"}} 
                                     layout="position" 
-                                    onClick={()=> setIsOpen(!isOpen)} 
+                                    onClick={()=>onHandleClick('1.2')} 
                                     className='experiences-item'
                                     >
                             <motion.h4 layout>ASML: Software Intern</motion.h4>
-                            {isOpen && (
+                            {isOpen=='1.2' && (
                             <motion.div className="experiences-expand" 
                                         initial={{opacity:0}}
                                         animate={{opacity:1}}
@@ -92,11 +107,11 @@ const Experiences = () => {
                     <div className='experiences-items'>
                     <motion.div transition = {{duration:1, type:"spring"}} 
                                     layout="position" 
-                                    onClick={()=> setIsOpen(!isOpen)} 
+                                    onClick={()=> onHandleClick('1.3')} 
                                     className='experiences-item'
                                     >
                             <motion.h4 layout>ASML: Software Intern</motion.h4>
-                            {isOpen && (
+                            {isOpen=='1.3' && (
                             <motion.div className="experiences-expand" 
                                         initial={{opacity:0}}
                                         animate={{opacity:1}}
@@ -125,15 +140,13 @@ const Experiences = () => {
                         </div>
                         <div className='experiences-empty'></div>
                     </div>
-                </div>
+                </div>}
 
 
 
 
                 {/* Personnal experiences */}
-                <div className='experiences-container'>
-                    <h2 className='experiences-title'>Personal experiences</h2>
-                    <div className='experiences-title-bar'></div>
+                {isClicked && <div className='experiences-container'>
                     <div className='experiences-items'>
                         <div className='experiences-empty'></div>
                         <div className='experiences-bar'>
@@ -142,11 +155,11 @@ const Experiences = () => {
                         </div>
                         <motion.div transition = {{duration:1, type:"spring"}} 
                                         layout="position" 
-                                        onClick={()=> setIsOpen(!isOpen)} 
+                                        onClick={()=> onHandleClick('2.1')} 
                                         className='experiences-item'
                                         >
                                 <motion.h4 layout>ASML: Software Intern</motion.h4>
-                                {isOpen && (
+                                {isOpen=='2.1' && (
                                 <motion.div className="experiences-expand" 
                                             initial={{opacity:0}}
                                             animate={{opacity:1}}
@@ -174,11 +187,11 @@ const Experiences = () => {
                     <div className='experiences-items'>
                         <motion.div transition = {{duration:1, type:"spring"}} 
                                         layout="position" 
-                                        onClick={()=> setIsOpen(!isOpen)} 
+                                        onClick={()=> onHandleClick('2.2')} 
                                         className='experiences-item'
                                         >
                                 <motion.h4 layout>ASML: Software Intern</motion.h4>
-                                {isOpen && (
+                                {isOpen=='2.2' && (
                                 <motion.div className="experiences-expand" 
                                             initial={{opacity:0}}
                                             animate={{opacity:1}}
@@ -219,11 +232,11 @@ const Experiences = () => {
 
                         <motion.div transition = {{duration:1, type:"spring"}} 
                                     layout="position" 
-                                    onClick={()=> setIsOpen(!isOpen)} 
+                                    onClick={()=> onHandleClick('2.3')} 
                                     className='experiences-item'
                                     >
                             <motion.h4 layout>ASML: Software Intern</motion.h4>
-                            {isOpen && (
+                            {isOpen=='2.3' && (
                             <motion.div className="experiences-expand" 
                                         initial={{opacity:0}}
                                         animate={{opacity:1}}
@@ -248,7 +261,7 @@ const Experiences = () => {
                         </motion.div>
                         
                     </div>
-                </div>
+                </div>}
             </div>
         </div>
         </>

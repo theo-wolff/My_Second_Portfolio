@@ -1,7 +1,7 @@
 import React from 'react'
 import "./About.css"
 import bitmoji from "../../img/bitmoji.jfif"
-import chesspiece from "../../img/chess-piece.svg"
+import chesspiece from "../../img/chess-piece.png"
 import computer from "../../img/computer.svg"
 import cvFile from "../../img/cv-file.svg"
 import cv_WT from "../../img/CV_Theo_Wolff.pdf"

@@ -5,7 +5,7 @@ import About from './components/About/About.js'
 import Skills from './components/Skills/Skills.js';
 import Experiences from './components/Experiences/Experiences.js';
 import Education from './components/Education/Education.js';
-
+import Portfolio from './components/Portfolio/Portfolio.js';
 
 
 function App() {
@@ -18,14 +18,17 @@ function App() {
       <section id="about-me">
         <About></About>
       </section>
-      <section id="education">
+      {/* <section id="education">
         <Education></Education>
-      </section>
+      </section> */}
       <section id="skills">
         <Skills></Skills>
       </section>
       <section id="experiences">
         <Experiences></Experiences>
+      </section>
+      <section id="portfolio">
+        <Portfolio></Portfolio>
       </section>
       
 
