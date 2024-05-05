@@ -29,7 +29,10 @@ function App() {
       </section>
       <section id="portfolio">
         <Portfolio></Portfolio>
+        
       </section>
+      
+      
       
 
     </div>
