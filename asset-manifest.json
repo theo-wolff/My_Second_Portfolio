@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/https//theo-wolff.github.io/static/css/main.7ec8e619.css",
+    "main.js": "/https//theo-wolff.github.io/static/js/main.8d28fc69.js",
+    "static/js/453.ed3810f9.chunk.js": "/https//theo-wolff.github.io/static/js/453.ed3810f9.chunk.js",
+    "static/media/desktop.jpg": "/https//theo-wolff.github.io/static/media/desktop.852f8a34faabc1f27927.jpg",
+    "static/media/opti.jpg": "/https//theo-wolff.github.io/static/media/opti.6705b9f90c4b9a2d320c.jpg",
+    "static/media/predictive.jpg": "/https//theo-wolff.github.io/static/media/predictive.4825b2f7c76ae544c635.jpg",
+    "static/media/portfolio.jpg": "/https//theo-wolff.github.io/static/media/portfolio.2a7602c6ef7730d44724.jpg",
+    "static/media/CV_Theo_Wolff.pdf": "/https//theo-wolff.github.io/static/media/CV_Theo_Wolff.6288f990b7945620ab0c.pdf",
+    "static/media/bitmoji.jfif": "/https//theo-wolff.github.io/static/media/bitmoji.cdeda4c618b9dbf3c32a.jfif",
+    "static/media/pcsn.jpg": "/https//theo-wolff.github.io/static/media/pcsn.8499dfd3995057090e03.jpg",
+    "static/media/proto.jpg": "/https//theo-wolff.github.io/static/media/proto.878a577036cd1ce51663.jpg",
+    "static/media/python.png": "/https//theo-wolff.github.io/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/c.png": "/https//theo-wolff.github.io/static/media/c.bf0af88d24cd724c83bc.png",
+    "static/media/physics.png": "/https//theo-wolff.github.io/static/media/physics.86c8d9eba03e29814d2a.png",
+    "static/media/c-sharp.png": "/https//theo-wolff.github.io/static/media/c-sharp.4a32f53d425c7ad4cb05.png",
+    "static/media/c-.png": "/https//theo-wolff.github.io/static/media/c-.24a8f93854ab092f17a7.png",
+    "static/media/sql.png": "/https//theo-wolff.github.io/static/media/sql.fbe5ebc3783670d8d7fa.png",
+    "static/media/foule.png": "/https//theo-wolff.github.io/static/media/foule.48fa50408262330733bd.png",
+    "static/media/chess-piece.png": "/https//theo-wolff.github.io/static/media/chess-piece.51a83e6cf442aa6097b6.png",
+    "static/media/united-kingdom.png": "/https//theo-wolff.github.io/static/media/united-kingdom.b9a2ba74e5f8a55977e7.png",
+    "static/media/france.png": "/https//theo-wolff.github.io/static/media/france.a013980c9a47c495f208.png",
+    "static/media/github.png": "/https//theo-wolff.github.io/static/media/github.f11021803f68852df283.png",
+    "static/media/german.png": "/https//theo-wolff.github.io/static/media/german.595e0c27997ea1710e4b.png",
+    "static/media/graduation-cap.png": "/https//theo-wolff.github.io/static/media/graduation-cap.8b2de6c5d2d117f3a232.png",
+    "static/media/scroll-down.png": "/https//theo-wolff.github.io/static/media/scroll-down.c3feb6bd117f1ee4e7b4.png",
+    "static/media/CV_photo.jpg": "/https//theo-wolff.github.io/static/media/CV_photo.37952bee071127db8f98.jpg",
+    "static/media/computer.svg": "/https//theo-wolff.github.io/static/media/computer.2453c33f9d3308186355d11840bd1838.svg",
+    "static/media/cv-file.svg": "/https//theo-wolff.github.io/static/media/cv-file.82d6fab497d986169fee9da4477d645f.svg",
+    "index.html": "/https//theo-wolff.github.io/index.html",
+    "static/media/vscode.svg": "/https//theo-wolff.github.io/static/media/vscode.483ce3930fb0500d6d7dd42b4a64be47.svg",
+    "main.7ec8e619.css.map": "/https//theo-wolff.github.io/static/css/main.7ec8e619.css.map",
+    "main.8d28fc69.js.map": "/https//theo-wolff.github.io/static/js/main.8d28fc69.js.map",
+    "453.ed3810f9.chunk.js.map": "/https//theo-wolff.github.io/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ec8e619.css",
+    "static/js/main.8d28fc69.js"
+  ]
+}
