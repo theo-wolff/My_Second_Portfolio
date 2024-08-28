@@ -84,12 +84,12 @@
 }
 
 .portfolio-item-img{
-    /* height: 10rem;
-    width: 16rem; */
-    max-width: 20rem;
-    max-height: 20rem;
+    height: 10rem;
+    width: 20rem;
+    /* max-width: 20rem;
+    max-height: 10rem; */
     border-radius: 10px;
-    object-fit: cover;
+    object-fit:cover;
     border: 1px solid var(--clr-dark);
     margin-top: 1rem;
     
