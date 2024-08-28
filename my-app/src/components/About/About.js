@@ -19,7 +19,7 @@ const About = () => {
           <li className='about-item'>
             <img className="about-img" src={computer}></img>
             <p>I am an engineering student with a keen interest in computer science. 
-            I'm passionate about programming and aspire to specialize in areas such as software development, data analysis, and AI.
+            I'm passionate about programming and aspire to specialize in software development.
             My aim is to contribute to innovative tech projects and further enhance my skills in this field.</p>
           </li>
           <li className='about-item'>

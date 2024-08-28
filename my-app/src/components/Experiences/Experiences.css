@@ -124,6 +124,7 @@
     background-color: var(--clr-dark);
     z-index: 5;
     overflow-y: scroll;
+    word-wrap: break-word;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     border-radius: 10px;

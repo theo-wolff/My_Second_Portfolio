@@ -6,11 +6,12 @@ import Skills from './components/Skills/Skills.js';
 import Experiences from './components/Experiences/Experiences.js';
 import Education from './components/Education/Education.js';
 import Portfolio from './components/Portfolio/Portfolio.js';
+import Footer from './components/Footer/footer.js';
 
 
 function App() {
   return (
-    <div >
+    <div>
       <section id="home">
         <Navbar></Navbar>
         <Home></Home>
@@ -29,12 +30,8 @@ function App() {
       </section>
       <section id="portfolio">
         <Portfolio></Portfolio>
-        
       </section>
-      
-      
-      
-
+      <Footer></Footer>
     </div>
   );
 }

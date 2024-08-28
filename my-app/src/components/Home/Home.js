@@ -47,7 +47,7 @@ const Home = () => {
                   animate = {{x: "-340%"}}
                   transition={{repeat: Infinity, duration: 7, repeatType:"mirror"}}
                   className='text-container slidingText'>
-        Engineer IT Programming
+        Engineer IT Programming Web
       </motion.div>
     </div>
     </>
