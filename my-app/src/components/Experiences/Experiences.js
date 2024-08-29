@@ -30,7 +30,7 @@ const Experiences = () => {
         <>
         <div className="experiences-global-container">
             <div className='experiences'>
-                <div className="experiences-title">Qualification</div>
+                <div className="experiences-title">Qualifications</div>
                 <div className="experiences-title-bar"></div>
                 <div className="experiences-title-category">
                     <div data-aos="fade-up" className="experiences-title-category-item" onClick={()=>setIsClicked(false)} style={{opacity: isHoveredEduc ? 0.5 : isClicked? 1 : 0.5}} onMouseEnter={() => setIsHoveredEduc(true)} onMouseLeave={() => setIsHoveredEduc(false)}><img class="experiences-title-img" src={Educ}></img> Education</div>
