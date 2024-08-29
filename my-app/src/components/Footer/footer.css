@@ -38,6 +38,10 @@
     gap: 0.2rem;
 }
 
+.footer-cursor{
+    cursor: pointer;
+}
+
 .footer-text{
     font-size: small;
     color: var(--clr-dark);

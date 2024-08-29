@@ -1,0 +1,27 @@
+.inner-cursor{
+    position: fixed;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    background: var(--clr-dark);
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.5s height 0.5s;
+    z-index: 999;
+}
+
+.outer-cursor{
+    position: fixed;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--clr-dark);
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.1s;
+    z-index: 999;
+}

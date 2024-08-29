@@ -8,7 +8,7 @@ export function Component(props) {
     const rotateY = useTransform(x, [-100, 100], [-60, 60]);
 
     return (
-        <div className='skill-item'>
+        <div className='skill-item' data-aos="fade-up">
             <motion.div>
                 <motion.img
                 style={{

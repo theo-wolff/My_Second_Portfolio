@@ -12,6 +12,7 @@ import perty from '../../img/perty.jpg'
 import { useState } from 'react';
 // import P_Item_Expand from './P_Item_Expand';
 import { motion } from 'framer-motion';
+import { hover } from '@testing-library/user-event/dist/hover'
 
 
 const Portfolio = () => {
@@ -20,6 +21,10 @@ const Portfolio = () => {
     const [current, setCurrent] = useState('All');
     const [isOpen, setIsOpen] = useState('');
     const [isClosed, setIsClosed]=useState(false);
+    const [isHoveredAll, setIsHoveredAll] = useState(false);
+    const [isHoveredWeb, setIsHoveredWeb] = useState(false);
+    const [isHoveredPython, setIsHoveredPython] = useState(false);
+    const [isHoveredC, setIsHoveredC] = useState(false);
 
     const onHandleClick=(val)=>{
         if(!isClosed){
@@ -41,10 +46,10 @@ const Portfolio = () => {
             <div className='portfolio-title'>Portfolio</div>
             <div className='portfolio-bar'></div>
             <div className='portfolio-category'>
-                <div onClick={()=>setCurrent('All')} className='portfolio-category-item' style={{opacity: current=='All'? 0.5 : 1}} >All</div>
-                <div onClick={()=>setCurrent('Web')} className='portfolio-category-item' style={{opacity: current=='Web'? 0.5 : 1}}>Web</div>
-                <div onClick={()=>setCurrent('Python')} className='portfolio-category-item' style={{opacity: current=='Python'? 0.5 : 1}}>Python</div>
-                <div onClick={()=>setCurrent('C')} className='portfolio-category-item' style={{opacity: current=='C'? 0.5 : 1}}>C</div>
+                <div onClick={()=>setCurrent('All')} className='portfolio-category-item' style={{opacity: isHoveredAll ? 0.5 : current === 'All' ? 0.5 : 1, transition: 'opacity 0.3s',}} onMouseEnter={() => setIsHoveredAll(true)} onMouseLeave={() => setIsHoveredAll(false)}>All</div>
+                <div onClick={()=>setCurrent('Web')} className='portfolio-category-item' style={{opacity: isHoveredWeb ? 0.5 : current=='Web'? 0.5 : 1}} onMouseEnter={() => setIsHoveredWeb(true)} onMouseLeave={() => setIsHoveredWeb(false)}>Web</div>
+                <div onClick={()=>setCurrent('Python')} className='portfolio-category-item' style={{opacity: isHoveredPython ? 0.5 : current=='Python'? 0.5 : 1}} onMouseEnter={() => setIsHoveredPython(true)} onMouseLeave={() => setIsHoveredPython(false)} >Python</div>
+                <div onClick={()=>setCurrent('C')} className='portfolio-category-item' style={{opacity: isHoveredC ? 0.5 : current=='C'? 0.5 : 1}} onMouseEnter={() => setIsHoveredC(true)} onMouseLeave={() => setIsHoveredC(false)}>C</div>
             </div>
             <div className='portfolio-items'>
                 {(current=='All' || current=='Web') && <P_Item image={portfolio} languages={['React']} title="Portfolio" text="I created my first portfolio to familiarize myself with HTML, CSS, and JavaScript. After completing my internship at ASML, I was able to build a second portfolio using React, applying the knowledge and skills I developed during this experience."></P_Item>}

@@ -16,3 +16,7 @@ span{
     display: flex;
     gap:20px;
 }
+
+.navbar-cursor{
+    cursor: pointer;
+}

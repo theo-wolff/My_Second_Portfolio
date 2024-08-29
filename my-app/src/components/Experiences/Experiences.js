@@ -11,6 +11,9 @@ const Experiences = () => {
     const [isOpen, setIsOpen] = useState('');
     const [isClosed, setIsClosed]=useState(false);
     const [isClicked, setIsClicked] = useState(false);
+    const [isHoveredExp, setIsHoveredExp] = useState(false);
+    const [isHoveredEduc, setIsHoveredEduc] = useState(false);
+
 
     const onHandleClick=(val)=>{
         if(!isClosed){
@@ -30,8 +33,8 @@ const Experiences = () => {
                 <div className="experiences-title">Qualification</div>
                 <div className="experiences-title-bar"></div>
                 <div className="experiences-title-category">
-                    <div className="experiences-title-category-item" onClick={()=>setIsClicked(false)} style={{opacity: isClicked? 1 : 0.5}}><img class="experiences-title-img" src={Educ}></img> Education</div>
-                    <div className="experiences-title-category-item" onClick={()=>setIsClicked(true)} style={{opacity: isClicked? 0.5 : 1}}><img class="experiences-title-img" src={Exp}></img> Experience</div>
+                    <div data-aos="fade-up" className="experiences-title-category-item" onClick={()=>setIsClicked(false)} style={{opacity: isHoveredEduc ? 0.5 : isClicked? 1 : 0.5}} onMouseEnter={() => setIsHoveredEduc(true)} onMouseLeave={() => setIsHoveredEduc(false)}><img class="experiences-title-img" src={Educ}></img> Education</div>
+                    <div  data-aos="fade-up" className="experiences-title-category-item" onClick={()=>setIsClicked(true)} style={{opacity: isHoveredExp ? 0.5 : isClicked? 0.5 : 1}} onMouseEnter={() => setIsHoveredExp(true)} onMouseLeave={() => setIsHoveredExp(false)}><img class="experiences-title-img" src={Exp}></img> Experience</div>
                 </div>
                 {!isClicked && <div className='experiences-container'>
                     <div className='experiences-items'>
@@ -40,8 +43,9 @@ const Experiences = () => {
                                     layout="position" 
                                     onClick={()=>onHandleClick('1.1')} 
                                     className='experiences-item'
+                                    data-aos="fade-up"
                                     >
-                            <motion.h4 layout>Ecole des Mines de Saint-Etienne</motion.h4>
+                            <motion.h4 layout >Ecole des Mines de Saint-Etienne</motion.h4>
                         </motion.div>
 
                         {/* A CHANGER DANS NVT COMPOSANT */}
@@ -79,6 +83,7 @@ const Experiences = () => {
                                     layout="position" 
                                     onClick={()=>onHandleClick('1.2')} 
                                     className='experiences-item'
+                                    data-aos="fade-up"
                                     >
                             <motion.h4 layout>Lycée Kleber</motion.h4>
                         </motion.div>
@@ -104,6 +109,7 @@ const Experiences = () => {
                                         layout="position" 
                                         onClick={()=> onHandleClick('1.3')} 
                                         className='experiences-item'
+                                        data-aos="fade-up"
                                         >
                                 <motion.h4 layout>Lycée Notre-Dame</motion.h4>
                         </motion.div>
@@ -144,6 +150,7 @@ const Experiences = () => {
                                             layout="position" 
                                             onClick={()=> onHandleClick('2.1')} 
                                             className='experiences-item'
+                                            data-aos="fade-up"
                                             >
                                     <motion.h4 layout>ASML Software Intern</motion.h4>
                             </motion.div>
@@ -182,6 +189,7 @@ const Experiences = () => {
                                         layout="position" 
                                         onClick={()=> onHandleClick('2.2')} 
                                         className='experiences-item'
+                                        data-aos="fade-up"
                                         >
                                 <motion.h4 layout>Salesman / Animator</motion.h4>
                         </motion.div>
@@ -217,6 +225,7 @@ const Experiences = () => {
                                         layout="position" 
                                         onClick={()=> onHandleClick('2.3')} 
                                         className='experiences-item'
+                                        data-aos="fade-up"
                                         >
                                 <motion.h4 layout>Sidel HMI Intern</motion.h4>
                             </motion.div>

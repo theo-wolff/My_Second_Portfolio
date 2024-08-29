@@ -7,10 +7,12 @@ import Experiences from './components/Experiences/Experiences.js';
 import Education from './components/Education/Education.js';
 import Portfolio from './components/Portfolio/Portfolio.js';
 import Footer from './components/Footer/footer.js';
-
+import Cursor from './components/Cursor/Cursor.js';
 
 function App() {
   return (
+    <>
+    <Cursor></Cursor>
     <div>
       <section id="home">
         <Navbar></Navbar>
@@ -33,6 +35,7 @@ function App() {
       </section>
       <Footer></Footer>
     </div>
+    </>
   );
 }
 

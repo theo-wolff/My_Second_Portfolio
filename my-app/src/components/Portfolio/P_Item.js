@@ -16,7 +16,7 @@ const P_Item = (props) => {
   });
 
     return (
-    <div className='portfolio-item'>
+    <div className='portfolio-item' data-aos="flip-left">
       <div className='portfolio-item-inner'>
         <div className='portfolio-item-front' ref={ref1}>
           <img className="portfolio-item-img" src={props.image} alt="modelism"></img>

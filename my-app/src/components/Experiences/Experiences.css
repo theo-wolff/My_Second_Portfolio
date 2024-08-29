@@ -45,6 +45,7 @@
 .experiences-title-category-item{
     opacity: 1;
     transition: 0.1s;
+    cursor: pointer;
 }
 
 .experiences-title-category-item:hover{
@@ -92,6 +93,8 @@
     opacity: 1;
     transition: 0.1s;
 }
+
+
 
 .experiences-item:hover{
     opacity:0.5;
