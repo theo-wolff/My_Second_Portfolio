@@ -7,7 +7,8 @@ import Predictive from '../../img/predictive.jpg'
 import pcsn from '../../img/pcsn.jpg'
 import opti  from '../../img/opti.jpg'
 import proto  from '../../img/proto.jpg'
-
+import pentesting  from '../../img/pentesting.jpg'
+import perty from '../../img/perty.jpg'
 import { useState } from 'react';
 // import P_Item_Expand from './P_Item_Expand';
 import { motion } from 'framer-motion';
@@ -46,12 +47,14 @@ const Portfolio = () => {
                 <div onClick={()=>setCurrent('C')} className='portfolio-category-item' style={{opacity: current=='C'? 0.5 : 1}}>C</div>
             </div>
             <div className='portfolio-items'>
-                {(current=='All' || current=='Web') && <P_Item image={portfolio} languages={['HTML','CSS','React']} title="Portfolio" text="I created my first portfolio to familiarize myself with HTML, CSS, and JavaScript. After completing my internship at ASML, I was able to build a second portfolio using React, applying the knowledge and skills I developed during this experience."></P_Item>}
-                {(current=='All' || current=='C') && <P_Item image={Predictive} languages={['C']} title="Prediction text" text="The project focuses on predictive text input. The goal is to enter a series of characters, and the program suggests n words starting with that series from a certain dictionary. The dictionary updates with each search, and users can add, edit, or delete words from it."></P_Item>}
+                {(current=='All' || current=='Web') && <P_Item image={portfolio} languages={['React']} title="Portfolio" text="I created my first portfolio to familiarize myself with HTML, CSS, and JavaScript. After completing my internship at ASML, I was able to build a second portfolio using React, applying the knowledge and skills I developed during this experience."></P_Item>}
+                {(current=='All' || current=='Web') && <P_Item image={perty} languages={['React', 'C#']} title="PERTY" text="During my internship at ASML, I developed an application that generates PERT diagrams with integrated Jira connectivity. This tool streamlines project management by visually representing tasks and timelines while staying connected to Jira for real-time updates and task tracking."></P_Item>}
                 {(current=='All' || current=='Python') && <P_Item image={foule} languages={['Python']} title="Supervised self-initiative work" text="Modelling crowd movements during public buildings evacuation. Python modelling of a room evacuation with obstacles and visualisation of the room with a graphical interface (Tkinter)."></P_Item>}
-                {(current=='All' || current=='SystemVerilog') && <P_Item image={pcsn} languages={['SystemVerilog']} title="PCSN" text="PCSN (Projet de conception d'un system numérique in French) stands for digital system design project. In this project, we implemented the ASCON128 cryptographic algorithm using SystemVerilog. This experience deepened my understanding of lightweight encryption and strengthened my skills in hardware design and SystemVerilog. It also improved my problem-solving abilities, particularly in optimizing and verifying cryptographic implementations."></P_Item>}
+                {(current=='All' || current=='SystemVerilog') && <P_Item image={pcsn} languages={['SystemVerilog']} title="PCSN" text="PCSN stands for digital system design project. We implemented the ASCON128 cryptographic algorithm using SystemVerilog."></P_Item>}
                 {(current=='All' || current=='C') && <P_Item image={opti} languages={['C']} title="Challenge-Optimisation" text="The optimisation challenge was to place surveillance points in specific locations in order to cover as many targets as possible while avoiding obstacles. This takes place on a 2D grid. The objective was to minimise the number of surveillance points by finding the exact locations."></P_Item>}
                 {(current=='All' || current=='Python') && <P_Item image={proto} languages={['Python']} title="Projet-Proto" text="This application measures soil dryness using a microcontroller and capacitive sensors. The data is transmitted via a serial connection. The application used to display data was designed with Tkinter."></P_Item>}
+                {(current=='All' || current=='Python') && <P_Item image={pentesting} languages={['Python']} title="PyFlaSql" text="Pen testing assesses an organization's ability to protect its systems from unauthorized access. PyFlaSql is a website used to develop custom pentesting tools."></P_Item>}
+                {(current=='All' || current=='C') && <P_Item image={Predictive} languages={['C']} title="Prediction text" text="The project focuses on predictive text input. The goal is to enter a series of characters, and the program suggests n words starting with that series from a certain dictionary. The dictionary updates with each search, and users can add, edit, or delete words from it."></P_Item>}
                 
             
             
