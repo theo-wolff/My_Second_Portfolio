@@ -46,12 +46,11 @@
     opacity: 1;
     transition: 0.1s;
     cursor: pointer;
+    border: 1px solid var(--clr-dark);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    box-shadow: var(--box-shadow);
 }
-
-.experiences-title-category-item:hover{
-    opacity: 0.5;
-}
-
 
 .experiences-title-img{
     width: 2rem;
@@ -90,15 +89,19 @@
     word-wrap: break-word;
     padding:1rem;
     cursor: pointer;
-    opacity: 1;
-    transition: 0.1s;
 }
-
-
 
 .experiences-item:hover{
-    opacity:0.5;
+    opacity:0.5 !important;
 }
+
+.experiences-item-short-title{
+    cursor: pointer;
+}
+
+
+
+
 
 .experiences-item-title{
     margin: 50px auto 0%;

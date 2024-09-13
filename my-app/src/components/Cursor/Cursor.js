@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import "./Cursor.css"
 import { m } from 'framer-motion'
+import git from "../../img/github.png"
 
 const Cursor = () => {
 
@@ -9,7 +10,7 @@ const Cursor = () => {
 
     useEffect(()=>{
         let innerCursor = document.querySelector(".inner-cursor")
-        let outerCursor = document.querySelector(".outer-cursor")
+        // let outerCursor = document.querySelector(".outer-cursor")
 
         const moveCursor =  (e) =>{
             let x = e.clientX
@@ -17,9 +18,8 @@ const Cursor = () => {
     
             innerCursor.style.left = `${x}px`
             innerCursor.style.top = `${y}px`
-            outerCursor.style.left = `${x}px`
-            outerCursor.style.top = `${y}px`
-            console.log('hey')
+            // outerCursor.style.left = `${x}px`
+            // outerCursor.style.top = `${y}px`
         }
 
 
@@ -34,7 +34,7 @@ const Cursor = () => {
   return (
     <>
     <div className='inner-cursor'></div>
-    <div className='outer-cursor'></div>
+    {/* <div className='outer-cursor'></div> */}
     </>
 
   )

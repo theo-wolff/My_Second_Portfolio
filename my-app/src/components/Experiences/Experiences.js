@@ -10,7 +10,7 @@ const Experiences = () => {
 
     const [isOpen, setIsOpen] = useState('');
     const [isClosed, setIsClosed]=useState(false);
-    const [isClicked, setIsClicked] = useState(false);
+    const [isClicked, setIsClicked] = useState(true);
     const [isHoveredExp, setIsHoveredExp] = useState(false);
     const [isHoveredEduc, setIsHoveredEduc] = useState(false);
 
@@ -33,8 +33,8 @@ const Experiences = () => {
                 <div className="experiences-title">Qualifications</div>
                 <div className="experiences-title-bar"></div>
                 <div className="experiences-title-category">
-                    <div data-aos="fade-up" className="experiences-title-category-item" onClick={()=>setIsClicked(false)} style={{opacity: isHoveredEduc ? 0.5 : isClicked? 1 : 0.5}} onMouseEnter={() => setIsHoveredEduc(true)} onMouseLeave={() => setIsHoveredEduc(false)}><img class="experiences-title-img" src={Educ}></img> Education</div>
-                    <div  data-aos="fade-up" className="experiences-title-category-item" onClick={()=>setIsClicked(true)} style={{opacity: isHoveredExp ? 0.5 : isClicked? 0.5 : 1}} onMouseEnter={() => setIsHoveredExp(true)} onMouseLeave={() => setIsHoveredExp(false)}><img class="experiences-title-img" src={Exp}></img> Experience</div>
+                    <div data-aos="fade-up" className="experiences-title-category-item" onClick={()=>setIsClicked(false)} style={{opacity: isHoveredEduc ? 1 : isClicked? 0.5 : 1}} onMouseEnter={() => setIsHoveredEduc(true)} onMouseLeave={() => setIsHoveredEduc(false)} ><img class="experiences-title-img" src={Educ}></img> Education</div>
+                    <div  data-aos="fade-up" className="experiences-title-category-item" onClick={()=>setIsClicked(true)} style={{opacity: isHoveredExp ? 1 : isClicked? 1 : 0.5}} onMouseEnter={() => setIsHoveredExp(true)} onMouseLeave={() => setIsHoveredExp(false)}><img class="experiences-title-img" src={Exp}></img> Experience</div>
                 </div>
                 {!isClicked && <div className='experiences-container'>
                     <div className='experiences-items'>
@@ -45,7 +45,7 @@ const Experiences = () => {
                                     className='experiences-item'
                                     data-aos="fade-up"
                                     >
-                            <motion.h4 layout >Ecole des Mines de Saint-Etienne</motion.h4>
+                            <motion.h4 className="experiences-item-short-title" layout >Ecole des Mines de Saint-Etienne</motion.h4>
                         </motion.div>
 
                         {/* A CHANGER DANS NVT COMPOSANT */}
@@ -85,7 +85,7 @@ const Experiences = () => {
                                     className='experiences-item'
                                     data-aos="fade-up"
                                     >
-                            <motion.h4 layout>Lycée Kleber</motion.h4>
+                            <motion.h4 className="experiences-item-short-title" layout>Lycée Kleber</motion.h4>
                         </motion.div>
                         {isOpen=='1.2' && (
                                     <motion.div className="experiences-expand" 
@@ -111,7 +111,7 @@ const Experiences = () => {
                                         className='experiences-item'
                                         data-aos="fade-up"
                                         >
-                                <motion.h4 layout>Lycée Notre-Dame</motion.h4>
+                                <motion.h4 className="experiences-item-short-title" layout>Lycée Notre-Dame</motion.h4>
                         </motion.div>
                         {isOpen=='1.3' && (
                         <motion.div className="experiences-expand" 
@@ -152,7 +152,7 @@ const Experiences = () => {
                                             className='experiences-item'
                                             data-aos="fade-up"
                                             >
-                                    <motion.h4 layout>ASML Software Intern</motion.h4>
+                                    <motion.h4 className="experiences-item-short-title" layout>ASML Software Intern</motion.h4>
                             </motion.div>
                             {isOpen=='2.1' && (
                             <motion.div className="experiences-expand" 
@@ -191,7 +191,7 @@ const Experiences = () => {
                                         className='experiences-item'
                                         data-aos="fade-up"
                                         >
-                                <motion.h4 layout>Salesman / Animator</motion.h4>
+                                <motion.h4 className="experiences-item-short-title" layout>Salesman / Animator</motion.h4>
                         </motion.div>
                         {isOpen=='2.2' && (
                         <motion.div className="experiences-expand" 
@@ -227,7 +227,7 @@ const Experiences = () => {
                                         className='experiences-item'
                                         data-aos="fade-up"
                                         >
-                                <motion.h4 layout>Sidel HMI Intern</motion.h4>
+                                <motion.h4 className="experiences-item-short-title" layout>Sidel HMI Intern</motion.h4>
                             </motion.div>
                             {isOpen=='2.3' && (
                             <motion.div className="experiences-expand" 
