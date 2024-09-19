@@ -56,6 +56,7 @@ const Experiences = () => {
                                     transition={{duration:1}}
                                     onClick={()=>onHandleClick('1.1')}
                                     >
+                            <i class="fa-regular fa-circle-xmark close-button"></i>
                             <h2 className='experiences-item-title'>Ecole des Mines de Saint-Etienne</h2>
                             <div className='experiences-item-title-bar'></div>
                             <div className="experiences-item-text">
@@ -94,6 +95,7 @@ const Experiences = () => {
                                     transition={{duration:0.5}}
                                     onClick={()=>onHandleClick('1.2')}
                                     >
+                            <i class="fa-regular fa-circle-xmark close-button"></i>
                             <h2 className='experiences-item-title'>Lycée Kleber</h2>
                             <div className='experiences-item-title-bar'></div>
                             <div className="experiences-item-text">
@@ -120,6 +122,7 @@ const Experiences = () => {
                                     transition={{duration:1}}
                                     onClick={()=> onHandleClick('1.3')} 
                                     >
+                            <i class="fa-regular fa-circle-xmark close-button"></i>
                             <h2 className='experiences-item-title'>Lycée Notre-Dame</h2>
                             <div className='experiences-item-title-bar'></div>
                             <div className="experiences-item-text">
@@ -161,6 +164,7 @@ const Experiences = () => {
                                         transition={{duration:1}}
                                         onClick={()=> onHandleClick('2.1')} 
                                         >
+                                <i class="fa-regular fa-circle-xmark close-button"></i>
                                 <h2 className='experiences-item-title'>ASML Software Intern</h2>
                                 <div className='experiences-item-title-bar'></div>
                                 <div className="experiences-item-text">
@@ -200,6 +204,7 @@ const Experiences = () => {
                                     transition={{duration:1}}
                                     onClick={()=> onHandleClick('2.2')} 
                                     >
+                            <i class="fa-regular fa-circle-xmark close-button"></i>
                             <h2 className='experiences-item-title'>Salesman / Animator</h2>
                             <div className='experiences-item-title-bar'></div>
                             <div className="experiences-item-text">
@@ -236,6 +241,7 @@ const Experiences = () => {
                                         animate={{opacity:1}}
                                         transition={{duration:1}}
                                         >
+                                <i class="fa-regular fa-circle-xmark close-button"></i>
                                 <h2 className='experiences-item-title'>Sidel HMI Intern</h2>
                                 <div className='experiences-item-title-bar'></div>
                                 <div className="experiences-item-text">
