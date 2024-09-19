@@ -12,7 +12,7 @@ import Cursor from './components/Cursor/Cursor.js';
 function App() {
   return (
     <>
-    <Cursor></Cursor>
+    {/* <Cursor></Cursor> */}
     <div>
       <section id="home">
         <Navbar></Navbar>
